@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 void inputArr(int a[]) {
     a[0] = 35;
     a[1] = 55;
@@ -11,12 +12,14 @@ void inputArr(int a[]) {
     a[8] = 403;
     a[9] = 504;
 }
+
 void printArr(int a[]) {
     for (int i = 0; i < 10; i++) {
         printf("%d\t", a[i]);
     }
     printf("\n");
 }
+
 int binarySearch(int e, int a[], int size) {
     int left = 0;
     int right = size - 1;
@@ -34,6 +37,7 @@ if (a[mid] < e) {
     }
  return -1;
 }
+
 int main() {
     int arr[10], ele, loc;
      inputArr(arr);
