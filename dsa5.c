@@ -10,7 +10,7 @@ a[i][j]  = rand()%100;
 }
 }
 
-void printMat(iny(*a)[4]) {
+void printMat(int(*a)[4]) {
   int i,j;
 for(i=0; i<4; i++) {
 for(j=0; j<4; j++) {
