@@ -14,4 +14,25 @@ new->next=new;
 return new;
 } else {
 new->next=head;
-while(cur
+while(cur->next!=head) {
+cur=cur->next;
+}
+cur->next=new;
+}
+return new;
+}
+void PrintNode(struct Node* head) {
+  struct Node* cur;
+cur=head;
+do {
+printf("%d->", cur->data);
+cur=cur->next;
+}
+  while(head!=cur);
+}
+int main() {
+  struct Node* head=NULL;
+head=InsertAtFirst(head,23);
+head=InsertAtFirst(head,56);
+PrintNode(head);
+}
